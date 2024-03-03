@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.body-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/mobile/bg-image-daytime.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.night-mode-bg-img {
+  background-image: url(./assets/mobile/bg-image-nighttime.jpg);
+}
+.night-mode-bg {
+  background-color: #0000008a !important;
+  color: white !important;
+}
+
+@media (min-width: 768px) {
+  .body-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./assets/tablet/bg-image-daytime.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .night-mode-bg-img {
+    background-image: url(./assets/tablet/bg-image-nighttime.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .body-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./assets/desktop/bg-image-daytime.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .night-mode-bg-img {
+    background-image: url(./assets/desktop/bg-image-nighttime.jpg);
+  }
+  .time-button-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 165px 0 0;
+  }
+}

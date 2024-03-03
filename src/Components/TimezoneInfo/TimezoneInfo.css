@@ -1,0 +1,59 @@
+.timezone-info-container {
+  background-color: #ffffff5c;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 24px 16px;
+  color: #303030;
+}
+.timezone-info-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.timezone-info-container p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.timezone-info-container span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .timezone-info-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 184px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 64px;
+  }
+  .timezone-info-container div {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .timezone-info-container p {
+    font-size: 15px;
+  }
+  .timezone-info-container span {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .timezone-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 165px;
+  }
+  .timezone-info-container p {
+    font-size: 18px;
+  }
+  .timezone-info-container span {
+    font-size: 56px;
+  }
+}
+
