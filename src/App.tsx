@@ -49,7 +49,7 @@ function App() {
 
   // Getting timezone API
   const getTimeZone = async () => {
-    await axios.get("http://worldtimeapi.org/api/ip").then((res) => {
+    await axios.get("https://worldtimeapi.org/api/ip").then((res) => {
       setTimeZone(res.data);
     });
   };
